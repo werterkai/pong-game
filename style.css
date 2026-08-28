@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: 3px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 40px;
+}
+
+.player-score,
+.computer-score {
+    flex: 1;
+}
+
+.player-score p,
+.computer-score p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.player-score span,
+.computer-score span {
+    font-size: 48px;
+    font-weight: bold;
+    display: block;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.game-status {
+    flex: 1;
+}
+
+#gameStatus {
+    font-size: 20px;
+    color: #ffff00;
+    text-shadow: 0 0 10px #ffff00;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+#gameCanvas {
+    background: #000;
+    border: 3px solid #00ff00;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    display: block;
+    margin: 20px auto;
+    cursor: none;
+}
+
+.controls {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.controls p {
+    margin: 5px 0;
+}
+
+.controls strong {
+    color: #ffff00;
+    font-weight: bold;
+}
